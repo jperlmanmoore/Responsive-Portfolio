@@ -37,8 +37,8 @@
     display: grid;
     grid-template-columns: 30% 30% 30%;
     grid-template-rows: 186px 186px 186px;
-    grid-row-gap: 25px;
-    grid-column-gap: 10px;
+    grid-row-gap: 75px;
+    grid-column-gap: 25px;
 }
 
 .sub-item-a {
@@ -255,18 +255,24 @@ h1 {
         left: 0px;
     }
 
-    /*Not sure why this doesn't work for items-4&5 like item-1-2, but it
-    should be max-width at 640 or less*/
     .item-4 {
         width: 100%;
         position: absolute;
-        margin-left: 0%;
-        margin-right: 0%;
-        padding: 0%;
+        top: 180px;
+        left: -5%;
+        padding-top: 20%;
+        display: grid;
+        grid-template-columns: 30% 30% 30%;
+        grid-template-rows: 186px 186px 186px;
+        grid-row-gap: 25px;
+        grid-column-gap: 10px;
     }
 
-    item-5 {
+    .item-5 {
         width: 100%;
+        position: absolute;
+        top: 75px;
+        left: 0%;
         margin-left: 0%;
         margin-right: 0%;
         padding: 0%;
@@ -286,6 +292,29 @@ h1 {
         top: 100px;
         left: 0px;
     }
+
+    .item-4 {
+        width: 86%;
+        position: absolute;
+        top: 200px;
+        left: 1%;
+        padding-top: 20%;
+        display: grid;
+        grid-template-columns: 30% 30% 30%;
+        grid-template-rows: 186px 186px 186px;
+        grid-row-gap: 25px;
+        grid-column-gap: 10px;
+    }
+
+    .item-5 {
+        width: 100%;
+        position: absolute;
+        top: 75px;
+        left: 0%;
+        margin-left: 0%;
+        margin-right: 0%;
+        padding: 0%;
+    }
 }
 
 @media only screen and (min-width: 769px) and (max-width: 960px) {
@@ -300,5 +329,27 @@ h1 {
         position: absolute;
         top: 100px;
         left: 0px;
+    }
+
+    .item-4 {
+        width: 81.5%;
+        position: absolute;
+        top: 200px;
+        left: 1%;
+        display: grid;
+        grid-template-columns: 30% 30% 30%;
+        grid-template-rows: 186px 186px 186px;
+        grid-row-gap: 25px;
+        grid-column-gap: 10px;
+    }
+
+    .item-5 {
+        width: 90%;
+        position: absolute;
+        top: 125px;
+        left: 3%;
+        margin-left: 0%;
+        margin-right: 0%;
+        padding: 0%;
     }
 }
