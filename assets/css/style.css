@@ -11,6 +11,9 @@
 .item-1 {
     width: 850px;
     margin-left: 59px;
+    position: fixed;
+    z-index: 1;
+    background-color: #ffffff;
 }
 
 .item-2 {
@@ -19,9 +22,39 @@
     top: 100px;
     left: 59px;
     padding-top: 10px;
-    width: 850px;
+    width: 90%;
 }
 
+.item-4 {
+    width: 87.25%;
+    position: absolute;
+    top: 200px;
+    left: 35px;
+    background-color: #ffffff;
+    padding-top: 25px;
+    padding-left: 25px;
+    margin-left: 25px;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 186px 186px 186px;
+    grid-row-gap: 25px;
+    grid-column-gap: 10px;
+}
+
+.sub-item-a {
+    grid-column-start: 1;
+    grid-row-start: 2;
+}
+
+.sub-item-b {
+    grid-column-start: 2;
+    grid-row-start: 1;
+}
+
+.catlbl {
+    grid-column-start: auto;
+    z-index: 1;
+}
 .aboutme {
     color: #4aaaa5;
     margin-left: 25px;
@@ -60,6 +93,13 @@ a {
     top: -15px;
 }
 
+h1 {
+    color: #4aaaa5;
+    margin-left: 25px;
+    padding-top: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+}
 #about {
     color: #777777;
     width: 75px;
@@ -124,10 +164,85 @@ a {
     text-align: center;
 }
 
+.item-5 {
+    width: 87.25%;
+    position: absolute;
+    top: 100px;
+    left: 88px;
+    background-color: #ffffff;
+    padding-bottom: 25px;
+}
+
+.nameinput {
+    height: 30px;
+    width: 90%;
+    margin-left: 25px;
+    margin-top: -5px;
+    border-color: lightgray;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.emailinput {
+    position: static;
+    margin-left: 25px;
+    width: 90%;
+    height: 30px;
+    border-color: lightgray;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.messageinput {
+    position: static;
+    margin-left: 25px;
+    height: 250px;
+    width: 90%;
+    border-color: lightgray;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.yourname {
+    margin-left: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: #666666;
+}
+
+.email {
+    margin-left: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #666666;
+}
+
+.message {
+    margin-left: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #666666;
+}
+
+.submit {
+    margin-left: 25px;
+    margin-top: 25px;
+    color: #ffffff;
+    background-color: #4aaaa5;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    width: 100px;
+    height: 35px;
+    border: none;
+}
+
+
 
 
 
 @media only screen and (max-width: 640px) {  
+    
+    .container {
+        width: 100%;
+    }
     .item-1 {
         position: static;
         width: 100%;
@@ -138,6 +253,23 @@ a {
         position: absolute;
         top: 75px;
         left: 0px;
+    }
+
+    /*Not sure why this doesn't work for items-4&5 like item-1-2, but it
+    should be max-width at 640 or less*/
+    .item-4 {
+        width: 100%;
+        position: absolute;
+        margin-left: 0%;
+        margin-right: 0%;
+        padding: 0%;
+    }
+
+    item-5 {
+        width: 100%;
+        margin-left: 0%;
+        margin-right: 0%;
+        padding: 0%;
     }
 }
 
